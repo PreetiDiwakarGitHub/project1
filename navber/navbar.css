@@ -1,0 +1,71 @@
+ 
+  
+  body {
+    background-color: rgb(38, 227, 244);
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+    list-style: none;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    font-size: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: rotate(180deg);
+}
+
+span {
+    color: rgb(72, 195, 206);
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid rgb(243, 238, 238);
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .links,
+    .icons {
+        display: none;
+    }
+
+    .links.active,
+    .icons.active {
+        display: flex;
+        flex-direction: column;
+    }
+} 
