@@ -1,0 +1,54 @@
+
+.section-center {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.menu-item {
+    background: #fdfcfc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.photo {
+    width: 60%;
+    height: auto;
+    border-radius: 0.25rem;
+}
+.item-info {
+    margin-top: 1rem;
+}
+.item-info header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.price {
+    color: #c59d5f;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    
+    
+}
+.btn-container button{
+    padding: 10px;
+    border: none;
+    background-color: white;
+}
+h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: aquamarine;
+}

@@ -1,0 +1,98 @@
+ body{
+    background-color: rgb(9, 151, 190);
+}
+.sidebar-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 1.5rem;
+}
+.close-btn {
+background: none;
+border: none;
+cursor: pointer;
+transition: transform 0.3s ease;
+}
+.close-btn:hover {
+ color:rgb(65, 56, 145);
+transform: rotate(180deg);
+
+}
+
+
+.links a {
+display: block;
+font-size: 30px;
+padding: 1rem;
+color: rgb(12, 6, 106);
+text-decoration: none;
+}
+ul{
+list-style: none;
+}
+.links li:hover {
+background-color: rgb(92, 92, 184);
+}
+
+.button {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  cursor: pointer;
+  border: none;
+  animation: bounce 3s ease-in-out infinite;
+  }
+  @keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+  }
+  .icons {
+    display: flex;
+    padding-bottom: 3rem;
+    gap: 1rem;
+    font-size: 20px;
+    }
+.icons a {
+font-size: 2rem;
+margin: 0.5rem;
+color: rgb(12, 6, 106);
+}
+.icons li{
+list-style: none;
+}
+.icons a:hover {
+color:blue;
+}
+
+.sidebar {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background:rgb(184, 183, 197);
+display: grid;
+grid-template-rows: auto 1fr auto;
+row-gap: 1rem;
+box-shadow: 10px 10px 10px rgb(148, 113, 185);
+transform: translate(-100%);
+}
+.show-sidebar {
+transform: translate(0);
+}
+@media screen and (min-width: 676px) {
+.sidebar {
+  width: 400px;
+}
+}
+.close-btn{
+  position: relative;
+  left: 90%;
+} 

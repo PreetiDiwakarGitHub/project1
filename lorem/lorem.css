@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh; 
+    background-color: #9ca5b5;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background: #f9f7f7;
+    padding: 10rem;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+
+.lorem-form input {
+    width: 70px;
+    padding: 0.55rem;
+    margin-right: 4rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background: #108810;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.btn:hover {
+    background: #4cae4c;
+}
+
+.result {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: #f1f1f1;
+    border-left: 5px solid #2b65b6;
+    border-right: 5px solid #2e44e8;;
+}

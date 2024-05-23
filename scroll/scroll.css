@@ -1,0 +1,152 @@
+
+   body {
+    margin: 0;
+  }
+  
+  .sections {
+    margin-top: 80px;
+  }
+  
+  .section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .links {
+    display: none; /* Hide by default */
+    gap: 10px;
+    font-size: 30px;
+    list-style: none;
+    flex-direction: column; /* Display in column when active */
+  }
+  
+  .links.active {
+    display: flex; /* Show when active */
+  }
+  
+  .icons {
+    display: flex;
+    gap: 30px;
+    font-size: 40px;
+    text-decoration: none;
+  }
+  
+  .logo {
+    display: flex;
+    font-size: 25px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(243, 240, 240);
+  }
+  
+  .btn {
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: rotate(180deg);
+  }
+  
+  span {
+    color: rgb(72, 195, 206);
+    margin-left: 20px;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(246, 241, 241);
+    }
+  
+    .links {
+      display: flex; /* Show by default on larger screens */
+      flex-direction: row; /* Display in row on larger screens */
+    }
+  }
+  
+  @media screen and (max-width: 1475px) {
+    .links,
+    .icons {
+      display: none;
+    }
+  
+    .links.active,
+    .icons.active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  .main {
+    position: fixed;
+    left: 70rem;
+  }
+  
+  body {
+    position: relative;
+    background-image: url('./img/nature12.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .lorem {
+    position: absolute;
+    top: 35vh;
+    left: 20vh;
+    right: 20vh;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+    color: rgb(3, 3, 71);
+  }
+  
+  .transparent-nav {
+    background-color: transparent;
+  }
+  
+  #home {
+    background-color: rgb(185, 241, 240);
+  }
+  
+  #about {
+    background-color: rgb(137, 241, 247);
+  }
+  
+  #projects {
+    background-color: rgb(116, 147, 237);
+  }
+  
+  #contact {
+    background-color: rgb(56, 56, 91);
+  }
+  
+  h1 {
+    color: blue;
+  }
+  
